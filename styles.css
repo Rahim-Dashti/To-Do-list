@@ -119,3 +119,20 @@ a {
   width: 1rem;
   height: 1rem;
 }
+
+input {
+  border: 3px rgb(170, 170, 170) solid;
+  border-radius: 0.3rem;
+}
+
+.button {
+  border: 3px rgb(170, 170, 170) solid;
+  border-radius: 0.3rem;
+}
+
+.add-task-button {
+  background-color: rgb(133, 243, 133);
+}
+.cancel-task-button {
+  background-color: rgb(248, 114, 114);
+}
