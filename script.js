@@ -154,17 +154,18 @@ function add_task_form() {
 
   let task_name = document.createElement("input");
   task_name.setAttribute("type", "text");
-  task_name.setAttribute("class", "task-name");
+  task_name.setAttribute("class", "task-name form-element");
   task_name.setAttribute("name", "task_name");
   task_name.setAttribute("placeholder", "Enter a task name");
 
   let task_date = document.createElement("input");
+  task_date.setAttribute("class", "form-element");
   task_date.setAttribute("type", "date");
   task_date.setAttribute("id", "task-date");
   task_date.setAttribute("name", "task_date");
 
   let add_task_button = document.createElement("button");
-  add_task_button.setAttribute("class", "add-task-button button");
+  add_task_button.setAttribute("class", "add-task-button button form-element");
   add_task_button.setAttribute("type", "submit");
   add_task_button.setAttribute("name", "submit-button");
   add_task_button.setAttribute(
@@ -174,7 +175,10 @@ function add_task_form() {
   add_task_button.innerText = "Add";
 
   let cancel_task_button = document.createElement("button");
-  cancel_task_button.setAttribute("class", "cancel-task-button button");
+  cancel_task_button.setAttribute(
+    "class",
+    "cancel-task-button button form-element"
+  );
   cancel_task_button.setAttribute("onclick", "cancel_task()");
   cancel_task_button.setAttribute("name", "cancel-button");
   cancel_task_button.innerText = "Cancel";
