@@ -15,7 +15,8 @@ body {
 
 .upper-band {
   grid-area: 1/1/2/-1;
-  background-color: rgb(119, 151, 255);
+  color: rgb(221, 220, 220);
+  background-color: rgb(100, 100, 100);
   font-weight: 800;
   font-size: 2.25rem;
   padding-left: 2rem;
@@ -31,7 +32,7 @@ body {
 
 .left-side-band {
   grid-area: 2/1/-2/2;
-  background-color: rgb(240, 214, 214);
+  background-color: rgb(216, 212, 212);
   font-weight: 650;
   padding-left: 2rem;
   padding-top: 1rem;
@@ -48,11 +49,12 @@ body {
 
 .task-section {
   grid-area: 2/2/-2/-1;
-  background-color: rgb(235, 235, 152);
+  background-color: rgb(236, 236, 234);
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  overflow: auto;
 }
 
 .title-task-section {
@@ -61,9 +63,20 @@ body {
 }
 
 .lower-band {
+  color: white;
   display: flex;
   grid-area: -2/1/-1/-1;
-  background-color: rgb(119, 151, 255);
+  background-color: rgb(100, 100, 100);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .copywrite {
@@ -87,6 +100,22 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.task {
+  display: flex;
+}
+
+.task-date {
+  margin-left: auto;
+}
+
+.done-button {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1rem;
   width: 1rem;
   height: 1rem;
 }
